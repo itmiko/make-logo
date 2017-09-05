@@ -1,0 +1,153 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+	margin: 0
+	padding: 0
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+ol, ul
+	list-style-type: none
+
+a, a:hover
+	text-decoration: none
+
+*
+	margin: 0
+	padding: 0
+
+//*****HEADER*****//
+.header
+	position: absolute
+	top: 20px
+	left: 0
+	right: 0
+	width: 100%
+	padding: 20px 0
+	.container
+		width: 1160px
+		margin: 0 auto
+	.logo
+		float: left
+	.nav
+		float: right
+		padding-top: 5px
+		li
+			float: left
+			margin-right: 25px
+			&:last-child
+				margin-right: 0
+			a
+				font-size: 14px
+				font-family: Arial
+				color: $grey
+				&:hover
+					color: $lightblue
+
+//*****HOME SECTION*****//
+.home
+	height: 700px
+	padding-top: 250px
+	text-align: center
+	font-size: 30px
+	color: $black
+	font-family: robotoLight
+	background-size: cover
+	h1
+		line-height: 60px
+	img
+		position: absolute
+		top: 200px
+		left: 330px
+
+	#make-block-form
+		margin: 0 auto
+		margin-top: 100px
+		width: 550px
+		height: 54px
+		border: $lightgrey solid 1px
+		border-radius: 5px
+		.form-item
+			padding: 18px 0 0 23px
+			float: left
+		input
+			padding: 0
+			margin: 0
+			display: block
+			border: none
+			outline: none
+			background: none
+			width: 100%
+			height: 100%
+			font-size: 15px
+			&::-webkit-input-placeholder
+				color: $grey
+		.form-actions
+			border-radius: 5px
+			width: 180px
+			height: 54px
+			float: right
+			border: $lightgrey solid 1px
+			margin: -1px -1px 0 0
+			background-color: $blue
+			transition: all .4s 
+			&:hover
+				background-color: $black
+				transition: all .4s 
+			input
+				overflow: hidden
+				font-size: 12px
+				color: $white
+				&:hover
+					cursor: pointer
+
+
+
+@import "media" // always at the end
